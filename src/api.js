@@ -30,7 +30,7 @@ app.use("/wallet", walletRoutes);
 
 
 // Telegram Bot Integration
-const BOT_TOKEN = "8188864765:AAEm2rS_zyHOKBdnhQPxPvtH-IBLEqJfVCw"; // Replace with your bot token
+const BOT_TOKEN = "7866889095:AAGu5UvDh54cEDwNvjNpaDWqQAz2oa8Z1Hc"; // Replace with your bot token
 const bot = new TelegramBot(BOT_TOKEN, { polling: true });
 
 // Define /start command
@@ -38,10 +38,9 @@ bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
   bot.on("message", (msg) => {
     const chatId = msg.chat.id;
-    bot.sendMessage(chatId, `Received: ${msg.text}`);
   });
   
-  bot.sendMessage(chatId, "Welcome! Click the button below to access the game:", {
+  bot.sendMessage(chatId, "Dive into the fun! Test your reflexes, challenge your friends, and climb to the top of the leaderboard. Unlock rewards, earn Gold Vouchers, and enjoy exclusive benefits in the Hoodie Chicken universe.", {
     reply_markup: {
       inline_keyboard: [
         [
