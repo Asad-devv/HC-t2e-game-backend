@@ -40,7 +40,7 @@ bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
   });
   
-  bot.sendMessage(chatId, "Dive into the fun! Test your reflexes, challenge your friends, and climb to the top of the leaderboard. Unlock rewards, earn Gold Vouchers, and enjoy exclusive benefits in the Hoodie Chicken universe.", {
+  bot.sendMessage(chatId, "Dive into the Fun! Put your reflexes to the test, challenge your friends, and dominate the leaderboard. Unlock exciting rewards, earn Gold Vouchers, and enjoy exclusive benefits in the Hoodie Chicken universe. 📢 Interested in Advertising? Contact us at info@hoodiechicken.com for more details!", {
     reply_markup: {
       inline_keyboard: [
         [
